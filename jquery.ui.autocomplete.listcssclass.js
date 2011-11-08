@@ -14,7 +14,7 @@
 
     $.extend( proto, {
         _renderMenu: function(ul, items) {
-            if (this.options.listCssClass) {
+            if ("listCssClass" in this.options) {
                 $(ul).addClass(this.options.listCssClass);
             }
             renderMenu.apply(this, arguments);
